@@ -15,8 +15,10 @@ public class TryResearchButtonUnpress extends AppCompatActivity {
 
         //setContentView(R.layout.activity_try_research_button_unpress);
         ActivityTryResearchButtonUnpressBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_try_research_button_unpress);
-        binding.setActivity(this);
+        DataModel model = new DataModel();
+
+        binding.setModel(model);
     }
 
-    public final ObservableBoolean pressed = new ObservableBoolean(true);
+
 }
